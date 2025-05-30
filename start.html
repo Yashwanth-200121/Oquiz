@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>OQUIZ</title>
+    <link rel="stylesheet" type="text/css" href="startstyle.css">
+</head>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+<body>
+    <ul>
+        <span id ="hov">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="active" href="home.html">Home</a></li>
+        </span>
+        <li id=hovs><a href="main.html"class="glyphicon glyphicon-user">Signin</a></li>
+
+    </ul>
+    <background-image><img src="laptop3.png" alt="lap"></background-image>
+  
+</body>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="start2style.css">
+
+</head>
+<body>
+<span class ="home"><a class="act active" href="start.html">Home</a></span>  
+<div class="container">                         
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Quiz
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Class 6<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="6thMaths.html">Maths</a></li>
+          <li><a tabindex="-1" href="6thScience.html">Science</a></li>
+          <li><a tabindex="-1" href="6thSocial.html">Social</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Class 7<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="7thMaths.html">Maths</a></li>
+          <li><a tabindex="-1" href="7thScience.html">Science</a></li>
+          <li><a tabindex="-1" href="7thSocial.html">Social</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Class 8<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="8thMaths.html">Maths</a></li>
+          <li><a tabindex="-1" href="8thScience.html">Science</a></li>
+          <li><a tabindex="-1" href="8thSocial.html">Social</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+    <span class="icon"><a href="login.php"class="glyphicon glyphicon-user">Logout</a></li></span>
+    <span class="icon"><a href="doubt.php">doubts</a></li></span>
+</div>
+<hr class="ln">
+<p class="lap"><img src="laptop3.jpg" alt="laptop" ></p>
+    <h1 id=texth>Boost student engagement with real-time, classroom quiz racing</h1>
+    <h4 id=textp>OQuiz makes it easy to get students excited about types of quizes. Create quizes and track your progress with just a few clicks.</h4>
+    <hr id="line">
+    <a class ="button" href="main.html"><span>Get Started</span></a><br><br><br><br>
+    <p id="head">Everything you need for mastery and engagement</p>
+    <p id="dhead">Introduce concepts, check for understanding, get instant insights, and more.</p>
+    <p class ="timer"><img src="web-timer-header-min.jpg" width="60%"></p>
+    <h4 id="textt">OQuiz has running timer in quiz mode to test the ability of the students and practice mode makes it even better for preperation</h4>
+    <div class="container1">
+        <div class= "doubt"><img src="doubts.jpg" width="25%"></div>
+        <div id="textd"><h3>After Writing quiz do you want to know Your weakpoints ? We have Doubts Section in which Our Experts will clarify your Doubts...</div></h3>
+    </div>
+    <p class="report"><img src="report.jpg" alt="report"></p>
+    <p id="textr">Our reports will help you understand your mistakes right after your submission and things get even better when you can have access to them without even accessing the website.</p>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>
